@@ -3,9 +3,9 @@ import { ActivatedRoute, Router } from '@angular/router';
 import {
   Pokemon,
   PokemonStats,
-} from 'src/app/services/pokemon-types/pokemon.type';
-import { PokemonService } from 'src/app/services/pokemon.service';
-import { GetPokemonType } from 'src/helpers/GetPokemonType';
+} from '../../services/pokemon-types/pokemon.type';
+import { PokemonService } from '../../services/pokemon.service';
+import { GetPokemonType } from '../../../helpers/GetPokemonType';
 
 @Component({
   selector: 'app-pokemon-view',
