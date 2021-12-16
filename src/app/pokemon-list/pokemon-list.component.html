@@ -1,0 +1,9 @@
+<div class="pokemon-grid">
+  <div
+    class="box"
+    *ngFor="let pokemon of pokemonsList$; let i = index"
+    #PokemonElement
+  >
+    <pokemon-detail [pokemon]="pokemon"></pokemon-detail>
+  </div>
+</div>

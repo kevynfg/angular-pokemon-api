@@ -1,0 +1,40 @@
+.works {
+  color: black;
+}
+
+.container,
+.pokemon-stats {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemon-stats {
+  margin-top: 20px;
+}
+
+.pokemon-image {
+  height: 200px;
+  width: 200px;
+}
+
+.pokemon-type {
+  margin: 0;
+  padding: 0;
+  gap: 15px;
+  border-radius: 3px;
+  display: flex;
+  list-style: none;
+}
+
+.pokemon-background-type {
+  border-radius: 3px;
+  padding: 3px 10px;
+
+  span {
+    color: white;
+  }
+}

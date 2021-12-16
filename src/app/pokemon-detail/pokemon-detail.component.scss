@@ -1,0 +1,29 @@
+.pokemon-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  margin-top: 2rem;
+}
+
+.pokemon-image, .pokemon-name, .pokemon-type {
+  grid-column: span 3;
+}
+
+.pokemon-type {
+  margin: 0;
+  padding: 0;
+  gap: 15px;
+  margin-top: 20px;
+  border-radius: 3px;
+  display: flex;
+  list-style: none;
+}
+
+.pokemon-background-type {
+  border-radius: 3px;
+  padding: 3px 10px;
+
+  span {
+    color: white;
+  }
+}

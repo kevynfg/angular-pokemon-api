@@ -1,0 +1,22 @@
+.header-nav {
+  display: flex;
+  padding: 30px;
+  background-color: seagreen;
+  font-size: 2rem;
+  font-weight: 800;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-home {
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 3px;
+}
+
+.item-home:hover {
+  cursor: pointer;
+  color: rgb(66, 66, 224);
+}
+
+

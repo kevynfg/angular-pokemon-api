@@ -1,0 +1,36 @@
+<div class="container">
+  <img
+    class="pokemon-image"
+    [src]="pokemon.sprites.front_default"
+    alt="Imagem padrão do pokemon selecionado"
+  />
+  <div>
+    <p>
+      <strong>{{ pokemon.name | uppercase }}</strong>
+    </p>
+  </div>
+  <ul class="pokemon-type">
+    <li>Height: {{ pokemon.height }}</li>
+    <li
+      [ngStyle]="{ 'background-color': getPokemonType(item.type.name) }"
+      class="pokemon-background-type"
+      *ngFor="let item of pokemon.types"
+    >
+      <span>{{ item.type.name | uppercase }}</span>
+    </li>
+    <li>Weight: {{ pokemon.weight }} kg</li>
+  </ul>
+</div>
+
+<div class="pokemon-stats">
+  <ul style="list-style: none">
+    <li *ngFor="let stats of pokemon.stats; let i = index">
+      {{ transcriptPokemonStatsName(stats.stat.name) }}:
+      {{ transcriptPokemonStats(stats) }}
+    </li>
+  </ul>
+
+  <div>
+    <span>Moves</span>
+  </div>
+</div>
